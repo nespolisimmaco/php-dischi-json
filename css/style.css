@@ -51,3 +51,16 @@ main {
     width: 200px;
     border-radius: 0;
 }
+
+.title {
+    font-weight: 700;
+}
+
+.author {
+    font-size: .9rem;
+}
+
+.year {
+    font-weight: 700;
+    font-size: 1.2rem;
+}

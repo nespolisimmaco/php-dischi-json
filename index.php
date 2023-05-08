@@ -48,8 +48,8 @@
                                     </div>
                                     <!-- Card body -->
                                     <div class="card-body text-center">
-                                        <h5>{{ album.title }}</h5>
-                                        <div class="author">{{ album.author }}</div>
+                                        <h5 class="title">{{ album.title }}</h5>
+                                        <div class="author my-2">{{ album.author }}</div>
                                         <div class="year">{{ album.year }}</div>
                                     </div>
                                 </div>
