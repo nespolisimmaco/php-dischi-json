@@ -4,11 +4,12 @@ createApp({
   data() {
     return {
       myAPI: "http://localhost/Boolean/php-dischi-json/server.php",
+      albums: [],
     };
   },
   mounted() {
     axios.get(this.myAPI).then((resp) => {
-      console.log(resp);
+      this.albums = resp.data.results;
     });
   },
 }).mount("#app");

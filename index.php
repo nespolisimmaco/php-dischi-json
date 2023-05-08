@@ -14,11 +14,57 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
+        <div class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="container">
 
+                </div>
+            </header>
+            <!-- End Header -->
+            <!-- Main -->
+            <main>
+                <!-- My container -->
+                <div class="ms_container">
+                    <!-- Container fluid -->
+                    <div class="container-fluid">
+                        <!-- Row -->
+                        <div class="row row-cols-3 g-5">
+                            <!-- Column -->
+                            <div class="col" v-for="(album, index) in albums" :key="index">
+                                <!-- Card -->
+                                <div class="card h-100">
+                                    <!-- Card image -->
+                                    <div class="card-image text-center pt-3">
+                                        <img :src="album.poster" class="card-img-top" alt="album.title">
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-body text-center">
+                                        <h5>{{ album.title }}</h5>
+                                        <div class="author">{{ album.author }}</div>
+                                        <div class="year">{{ album.year }}</div>
+                                    </div>
+                                </div>
+                                <!--End  Card -->
+                            </div>
+                            <!-- End Column -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Container fluid -->
+                </div>
+                <!-- End My container -->
+            </main>
+            <!-- End Main -->
+        </div>
     </div>
     <!-- Javascript -->
     <script src="js/script.js"></script>
