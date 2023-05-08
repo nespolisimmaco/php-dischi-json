@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Spotify Albums</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Axios -->
@@ -24,9 +25,9 @@
     <div id="app">
         <div class="wrapper">
             <!-- Header -->
-            <header>
+            <header class="d-flex align-items-center">
                 <div class="container">
-
+                    <img src="img/spotify-logo-png-7057.png" alt="Spotify logo">
                 </div>
             </header>
             <!-- End Header -->
